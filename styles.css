@@ -1,19 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin: 0;
   background-color: whitesmoke;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  max-width: 900px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .card {
@@ -45,6 +45,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 1.2rem;
+  border: 2px solid #00223d;
   border-radius: 10px;
   color: white;
   padding: 20px;
